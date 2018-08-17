@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TextureAtlasEditor</class>
+ <widget class="QWidget" name="TextureAtlasEditor">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>261</width>
+    <height>180</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QFormLayout" name="formLayout_2">
+     <item row="0" column="0">
+      <widget class="QLabel" name="textureSizeLabel">
+       <property name="text">
+        <string>Texture size</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QSpinBox" name="textureWidth">
+         <property name="suffix">
+          <string/>
+         </property>
+         <property name="minimum">
+          <number>1</number>
+         </property>
+         <property name="maximum">
+          <number>99999</number>
+         </property>
+         <property name="value">
+          <number>512</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="textureSizeSeparator">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>x</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="textureHeight">
+         <property name="suffix">
+          <string/>
+         </property>
+         <property name="minimum">
+          <number>1</number>
+         </property>
+         <property name="maximum">
+          <number>99999</number>
+         </property>
+         <property name="value">
+          <number>512</number>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="packingMethodLabel">
+       <property name="text">
+        <string>Packing method</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QComboBox" name="packingMethod">
+       <item>
+        <property name="text">
+         <string>Best Short Side Fit</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Best Long Side Fit</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Best Area Fit</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Bottom Left Rule</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Contact Point Rule</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="marginLabel">
+       <property name="text">
+        <string>Page margin</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="1" column="2">
+        <widget class="QSpinBox" name="marginRight"/>
+       </item>
+       <item row="0" column="1">
+        <widget class="QSpinBox" name="marginTop"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QSpinBox" name="marginLeft"/>
+       </item>
+       <item row="2" column="1">
+        <widget class="QSpinBox" name="marginBottom"/>
+       </item>
+      </layout>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="glyphSpacingLabel">
+       <property name="text">
+        <string>Glyph spacing</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QSpinBox" name="glyphSpacingHorizontal">
+         <property name="suffix">
+          <string> px</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="glyphSpacingSeparator">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>x</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="glyphSpacingVertical">
+         <property name="suffix">
+          <string> px</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
